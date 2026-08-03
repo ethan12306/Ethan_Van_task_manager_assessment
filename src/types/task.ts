@@ -40,6 +40,14 @@ export interface ActivityEntry {
   created_at: string
 }
 
+export interface Label {
+  id: string
+  name: string
+  color: string
+  user_id: string
+  created_at: string
+}
+
 export const COLUMNS: { id: TaskStatus; label: string }[] = [
   { id: 'todo', label: 'To Do' },
   { id: 'in_progress', label: 'In Progress' },
