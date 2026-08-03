@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  /* Color tokens */
+  --bg: #F7F5F0;
+  --surface: #FFFFFF;
+  --ink: #14231C;
+  --ink-muted: #6B7A70;
+  --accent: #2E7D4F;
+  --accent-soft: rgba(46, 125, 79, 0.1);
+
+  /* Status colors — used as thin accents only, never full fills */
+  --status-todo: #9CA39D;
+  --status-in_progress: #D9A63E;
+  --status-in_review: #2E7D4F;
+  --status-done: #1F3A5F;
+
+  --border: #E4E1D8;
+  --shadow-sm: 0 1px 2px rgba(20, 35, 28, 0.06);
+  --shadow-md: 0 4px 12px rgba(20, 35, 28, 0.08);
+
+  /* Type tokens */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+/* Utility class for the scoreboard-style task ID */
+.stat-digit {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+}
